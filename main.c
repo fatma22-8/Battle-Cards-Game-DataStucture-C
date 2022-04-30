@@ -258,9 +258,9 @@ printf("\n4) YOUR CARDS ARE VISABLE TO YOU, SO YOU CAN CHOOSE ANY ONE OF THEM TO
 printf("\n5) 'A' means ATTACK, 'D' means DEFFEND , 'R' means RUN \n");
 printf("\n6) When you ATTACK and the value of your card is greater than the value of player 2 card you will have a new card\n");
 printf("\n7) in '6':\n    i.if player 2 Attack, player 2 will lose his current card\n    ii.if player 2 DEFFENDs, player 2 will lose his next card\n");
-printf("\n8) if you DEFFEND and the value of your card is greater than the value of player 2 card\n");
+printf("\n8) if you DEFFEND and the value of your card is greater than the value of player 2 card");
 printf("\n    i.if player 2 Attack,we return to case '6'\n    ii.if player 2 DEFFENDs, nothing happens\n");
-printf("\n9) i.f you RUN you lose your next card whatever your value is\n    i.if player 2 RUN, player 2 will lose his next card\n");
+printf("\n9) i.if you RUN you lose your next card whatever your value is\n   ii.if player 2 RUN, player 2 will lose his next card\n");
 
 printf("\nEnter number of cards:   ");
   scanf("%c",&c);
@@ -294,7 +294,7 @@ for(;; ){
       printf("Player 2 ending cards: ");
 
       printCards(p2);
-      
+
     if(getLength(p1_head) ==0&&getLength(p2) !=0)
     {
          printf("\nPlayer 1 ran out of cards. Player 2 wins\n\n");
