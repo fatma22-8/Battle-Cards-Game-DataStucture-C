@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
+#include <string.h>
+#include <ctype.h>
 #include "cards.h"
 
 Card* createCard(){
@@ -167,6 +169,27 @@ Card*Pullcard(Card*p1_head,char type,int val)
             cardt=2;
 
 return Search(p1_head,cardt,val);
+}
+int getNumber( char str[]){
+
+    for (int i=0; i<strlen(str); i++)
+ {
+        if(!isdigit(str[i]))
+        {
+            printf("Invalid input, please enter an integer<=50: \n");
+            scanf("%s",str);
+            getNumber(str);
+        }
+
+ }
+long int   n = atoi(str);
+    if(n>50)
+    {
+        printf("Invalid input, please enter an integer<=50: \n");
+        scanf("%s",str);
+        getNumber(str);
+    }
+return n;
 }
 
 
