@@ -44,5 +44,11 @@ Card*Search(Card*head,int type,int value);
 
 Card*Pullcard(Card*p1_head,char type,int val);
 
+void play ();
+
+//function to check if the number of cards is int or not
+
+int getNumber( char str[]);
+
 #endif
 
