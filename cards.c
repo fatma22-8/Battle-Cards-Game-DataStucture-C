@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stddef.h>
+#include<time.h>
+#include <string.h>
+#include <ctype.h>
 #include "cards.h"
 
 Card* createCard(){
@@ -106,3 +108,18 @@ Card* buildCards(int n ){
 return head;
 }
 
+int getNumber( char str[]){
+
+    for (int i=0; i<strlen(str); i++)
+ {
+        if(!isdigit(str[i]))
+        {
+            printf("Invalid input, please enter an integer number: \n");
+            scanf("%s",str);
+            getNumber(str);
+        }
+
+ }
+long int   n = atoi(str);
+return n;
+}
