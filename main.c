@@ -272,5 +272,6 @@ printf("\nPlayer 1 gets a new card. Player 2 loses his next card. \n");
         p1= removeCard(p1);
     }
     round++;
+
  return 0;
  }
