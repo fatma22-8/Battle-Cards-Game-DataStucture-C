@@ -22,11 +22,11 @@ In the following photo you can see the steps of playing the game
 
 1) ![image](https://user-images.githubusercontent.com/68230239/166142620-6dd081bd-2d1b-4db2-a500-c2ecd89a2a7a.png)
 
-2) ![image](https://user-images.githubusercontent.com/68230239/166137759-ee7ceffc-330f-4d84-bf34-d97749bbf5c4.png)
+2) ![image](https://user-images.githubusercontent.com/68230239/166142700-f6f54192-149c-4889-b4b1-6f2b7838c346.png)
 
-3) ![image](https://user-images.githubusercontent.com/68230239/166137775-dfc2b4a6-ca2f-4f16-970b-cd47746be067.png)
+3) ![image](https://user-images.githubusercontent.com/68230239/166142709-6bd25649-d997-415e-b55a-0e93e10fda2b.png)
 
-4) ![image](https://user-images.githubusercontent.com/68230239/166137809-aaee1754-c3bf-4d36-87fc-bd07eec9f42a.png)
+4) ![image](https://user-images.githubusercontent.com/68230239/166142721-c59bca2a-f701-40c6-96fc-c6a3f77266d1.png)
 
 5) ![image](https://user-images.githubusercontent.com/68230239/166137830-e9dc3094-3b05-4000-bb30-d27e6a5cdc97.png)
 
