@@ -176,19 +176,13 @@ int getNumber( char str[]){
  {
         if(!isdigit(str[i]))
         {
-            printf("Invalid input, please enter an integer<=50: \n");
+            printf("Invalid input, please enter an integer number: \n");
             scanf("%s",str);
             getNumber(str);
         }
 
  }
 long int   n = atoi(str);
-    if(n>50)
-    {
-        printf("Invalid input, please enter an integer<=50: \n");
-        scanf("%s",str);
-        getNumber(str);
-    }
 return n;
 }
 
