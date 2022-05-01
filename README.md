@@ -1,15 +1,15 @@
 # Battle-Cards-Game-DataStucture-C
 By changing the Parameters. In this game, we have only ONE parameter which is the number of cards, when you change this parameters the time changing.  
 
-## Number of cards = 5
-![image](https://user-images.githubusercontent.com/68230239/166161101-fb8a9c1e-2a29-4a5a-9d97-93b82cff1466.png)
+## Number of cards = 8
+![image](https://user-images.githubusercontent.com/68230239/166161310-439b17b6-06c4-4e37-9e5b-7f2e4440fe4e.png)
 
-![image](https://user-images.githubusercontent.com/68230239/166161149-6541f0f4-94d0-459e-ba92-6e1a3b1fb01a.png)
+![image](https://user-images.githubusercontent.com/68230239/166161335-edddea9c-ef24-41bd-883a-e3923468c33f.png)
 
-## Number of cards = 50
-![image](https://user-images.githubusercontent.com/68230239/166161052-b14b473e-de84-4975-923f-75377fe28ae6.png)
+## Number of cards = 80
+![image](https://user-images.githubusercontent.com/68230239/166161344-f00bef6a-3f76-4d7b-93d1-3df31ee00589.png)
 
-![image](https://user-images.githubusercontent.com/68230239/166161078-f7c9d79b-d975-4a0a-af22-42f6ca20f4a8.png)
+![image](https://user-images.githubusercontent.com/68230239/166161373-5c29c8e1-5f72-4892-8731-7f94817a715d.png)
 
 
 
