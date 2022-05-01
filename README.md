@@ -6,6 +6,7 @@ Battle Cards is a Game written by C language and using linked list to code it
 
 ## Game discription 
 The game is easy to be played, you don't need any thing to play it except reading the rules which written in the photo:
+
 ![image](https://user-images.githubusercontent.com/68230239/166138392-3bec79de-24e7-42af-a239-f39121426c0b.png)
 
 ### Why linked lists?
