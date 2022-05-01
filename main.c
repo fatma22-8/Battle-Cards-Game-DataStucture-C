@@ -1,22 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include<time.h>
+#include <string.h>
+#include <ctype.h>
 #include "cards.h"
 
-int main()
-{
-
-	clock_t start = clock();
-
     //initialize required variables
-      int n;
+    
+     long int n;
    struct Cards *p1;
    struct Cards *p2;
     int round=1;
+  char str[];
+
+int main()
+{
+	clock_t start = clock();
+
     srand(time(NULL));
 
-	printf("\nEnter number of cards:    ");
-        scanf("%d",&n);
+	printf("Enter number of cards:    ");
+       scanf("%s",str);
+      n=getNumber(str);
 
  p1=buildCards(n);
  p2=buildCards(n);
