@@ -34,35 +34,28 @@ int main()
  printCards(p2);
 
 for(;; ){
+    
+        if(getLength(p1) ==0 || getLength(p2) ==0){
+ if(getLength(p1) ==0){
 
-      if(getLength(p1) ==0){
-        printf("\n\n\n============ GAME OVER =============\n\n\n\n");
+         printf("\n\n\n============ GAME OVER =============\n\n\n\n");
 
             printf("\nPlayer 1 ran out of cards. Player 2 wins\n\n");
 
-    printf("Player 1 ending cards: ");
 
-      printCards(p1);
-
-      printf("Player 2 ending cards: ");
-
-      printCards(p2);
-
-
-      }else{
-
-
- printf("\n\n\n============ YOU WIN =============\n\n\n\n");
-
-
-    printf("Player 1 ending cards: ");
-
-      printCards(p1);
-
-      printf("Player 2 ending cards: ");
-
-      printCards(p2);
       }
+       else{
+
+      printf("\n\n\n============ YOU WIN =============\n\n\n\n");
+      }
+
+      printf("Player 1 ending cards: ");
+
+      printCards(p1);
+
+      printf("Player 2 ending cards: ");
+
+      printCards(p2);
 
       printf("The end\n");
 
@@ -196,7 +189,8 @@ printf("\nPlayer 1 gets a new card. Player 2 loses his next card. \n");
 
             printf("\nPlayer 2 wins. Player 2 gets a new card.  \n");
 
-        }else{
+        }
+        else{
 
              p1= removeCard(p1);
 
@@ -259,7 +253,8 @@ printf("\nPlayer 1 gets a new card. Player 2 loses his next card. \n");
 
         p2= removeCard(p2);
 
-    }else if(p2->card_type==1 && p1->card_type==2){
+    }
+    else if(p2->card_type==1 && p1->card_type==2){
 
      printf("\nPlayer 2 DEFENDSs and Player 1 RUNs.\n");
 
@@ -272,6 +267,6 @@ printf("\nPlayer 1 gets a new card. Player 2 loses his next card. \n");
         p1= removeCard(p1);
     }
     round++;
-
+}
  return 0;
  }
