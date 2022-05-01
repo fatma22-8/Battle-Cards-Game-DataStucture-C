@@ -15,7 +15,7 @@ int main()
     int round=1;
     srand(time(NULL));
 
-	printf("Enter number of cards:    ");
+	printf("\nEnter number of cards:    ");
         scanf("%d",&n);
 
  p1=buildCards(n);
@@ -39,8 +39,6 @@ for(;; ){
  if(getLength(p1) ==0){
 
          printf("\n\n\n============ GAME OVER =============\n\n\n\n");
-
-            printf("\nPlayer 1 ran out of cards. Player 2 wins\n\n");
 
 
       }
