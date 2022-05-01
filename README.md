@@ -5,11 +5,11 @@ Battle Cards is a Game written by C language and using linked list to code it
 ### Fatma Adel, Aya Mohammed, Esraa Hemdan, Ahmed Adel
 
 ## Game discription 
-the game is easy to be played, you don't need any thing to play it except reading the rules which written in the photo:
+The game is easy to be played, you don't need any thing to play it except reading the rules which written in the photo:
 ![image](https://user-images.githubusercontent.com/68230239/166138392-3bec79de-24e7-42af-a239-f39121426c0b.png)
 
 ### Why linked lists?
-well, linked lists have many features, so it was easy to add, remove, and search in linked lists without losing data
+Well, linked lists have many features, so it was easy to add, remove, and search in linked lists without losing data
 
 ### To run the code in MAIN BRANCH:
 1) Upload all files "main.c , cards.c , cards.h"
@@ -17,7 +17,7 @@ well, linked lists have many features, so it was easy to add, remove, and search
 
 
 ## How to play?
-in the following photo you can see the steps of playing the game 
+In the following photo you can see the steps of playing the game 
 
 1) ![image](https://user-images.githubusercontent.com/68230239/166137525-ec445c5d-2067-4512-aff0-16c42ce89b8b.png)
 
