@@ -20,7 +20,7 @@ Well, linked lists have many features, so it was easy to add, remove, and search
 ## How to play?
 In the following photo you can see the steps of playing the game 
 
-1) ![image](https://user-images.githubusercontent.com/68230239/166137525-ec445c5d-2067-4512-aff0-16c42ce89b8b.png)
+1) ![image](https://user-images.githubusercontent.com/68230239/166142620-6dd081bd-2d1b-4db2-a500-c2ecd89a2a7a.png)
 
 2) ![image](https://user-images.githubusercontent.com/68230239/166137759-ee7ceffc-330f-4d84-bf34-d97749bbf5c4.png)
 
