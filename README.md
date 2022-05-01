@@ -28,7 +28,6 @@ In the following photo you can see the steps of playing the game
 
 4) ![image](https://user-images.githubusercontent.com/68230239/166142721-c59bca2a-f701-40c6-96fc-c6a3f77266d1.png)
 
-5) ![image](https://user-images.githubusercontent.com/68230239/166137830-e9dc3094-3b05-4000-bb30-d27e6a5cdc97.png)
 
 ## For more details you can check our drive
 https://drive.google.com/drive/folders/19fdviDG4rm7YMf4pJthBlB_4ktCNkHik
