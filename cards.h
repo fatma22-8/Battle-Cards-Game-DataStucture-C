@@ -42,5 +42,9 @@ void printCards( Card *head );
 
 Card* buildCards( int n );
 
+//function to check if the number of cards is int or not
+
+int getNumber( char str[]);
+
 #endif
 
