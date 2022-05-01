@@ -285,9 +285,20 @@ for(;; ){
 
     if(getLength(p1_head) ==0 || getLength(p2) ==0)
     {
-      printf("\n\n\n============ GAME OVER =============\n\n\n\n");
+    if(getLength(p1_head) ==0&&getLength(p2) !=0)
+    {
+        printf("\n\n\n============ GAME OVER =============\n\n\n\n");
+    }
 
-       printf("Player 1 ending cards: ");
+      else if(getLength(p1_head) !=0&&getLength(p2) ==0)
+      {
+         printf("\n\n\n============ YOU WIN =============\n\n\n\n");
+      }
+
+      else
+          printf("\nNone of both players win\n\n");
+
+     printf("Player 1 ending cards: ");
 
       printCards(p1_head);
 
@@ -295,18 +306,6 @@ for(;; ){
 
       printCards(p2);
 
-    if(getLength(p1_head) ==0&&getLength(p2) !=0)
-    {
-         printf("\nPlayer 1 ran out of cards. Player 2 wins\n\n");
-    }
-
-      else if(getLength(p1_head) !=0&&getLength(p2) ==0)
-      {
-          printf("\nPlayer 2 ran out of cards. Player 1 wins\n\n");
-      }
-
-      else
-          printf("\nNone of both players win\n\n");
 
 printf("The end\n");
 
