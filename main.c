@@ -251,7 +251,7 @@ int main()
 
 printf("\nINETRUCTIONS OF THE GAME\n");
 
-printf("\n1) Enter number of cards\n");
+printf("\n1) Enter number of cards from 1 to 9\n");
 printf("\n2) PLAYER 1 & PLAYER 2 Will have the same number of cards \n");
 printf("\n3) YOU ARE PLAYER 1 & PLAYER 2 IS THE PC \n");
 printf("\n4) YOUR CARDS ARE VISABLE TO YOU, SO YOU CAN CHOOSE ANY ONE OF THEM TO PLAY THE ROUND \n");
@@ -296,7 +296,7 @@ for(;; ){
       }
 
       else
-          printf("\nNone of both players win\n\n");
+          printf("\n\n\n============ None of both players win =============\n\n\n\n");
 
      printf("Player 1 ending cards: ");
 
