@@ -6,7 +6,7 @@
 #include "cards.h"
 
     //initialize required variables
-    
+
      long int n;
    struct Cards *p1;
    struct Cards *p2;
@@ -15,13 +15,18 @@
 
 int main()
 {
-	clock_t start = clock();
-
-    srand(time(NULL));
 
 	printf("Enter number of cards:    ");
+
        scanf("%s",str);
-      n=getNumber(str);
+
+
+clock_t start = clock();
+
+    n=getNumber(str);
+
+  srand(time(NULL));
+
 
  p1=buildCards(n);
  p2=buildCards(n);
@@ -39,7 +44,7 @@ int main()
  printCards(p2);
 
 for(;; ){
-    
+
         if(getLength(p1) ==0 || getLength(p2) ==0){
  if(getLength(p1) ==0){
 
