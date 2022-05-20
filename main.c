@@ -280,6 +280,8 @@ n=getNumber(str);
 
  p2=buildCards(n);
 
+
+
 p1_head =p1;
 
  printf("============= PLAYER 1 VS PLAYER 2 SHOWDOWN ============\n");
@@ -310,7 +312,9 @@ for(;; ){
       printCards(p2);
 
 
-printf("The end\n");
+
+printf("\n\n\n============ THE END =============\n\n\n\n");
+
 
     return 0;
 
