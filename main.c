@@ -12,28 +12,29 @@
    int val, round=1;
   struct Cards *p1, *p2;
   Card *p1_head, *temp ;
-
+char player_name[50];
 
 void play (){
+
     printf("\n----- ROUND %d -----\n", round);
 
- printf("\nplayer 1: (%d)", getLength(p1_head) );
+ printf("\n%s: (%d)", player_name,getLength(p1_head) );
      printCards(p1_head);
 
- printf("\nplayer 2:  (%d)", getLength(p2));
+ printf("\ncomputer:  (%d)", getLength(p2));
      printCard(p2);
 
  printf("\n\nEnter the type and the value of the card you want to pull: ");
      scanf("%C",&type);
      scanf("%d",&val);
 
-p1=Pullcard(p1_head,type,val);
+p1=getvalue(p1_head,type,val);
 
 while(p1==NULL)
   {      scanf("%c",&type);
          scanf("%d",&val);
 
-         p1=Pullcard(p1_head,type,val);
+         p1=getvalue(p1_head,type,val);
          }
 
 if(p1->card_type==0 && p2->card_type==0) //Both ATTACK
@@ -48,7 +49,7 @@ if(p1->card_type==0 && p2->card_type==0) //Both ATTACK
 
            p1_head=addCard(p1_head, createCard());
 
-           printf("\n Player 1 gets a new card.\n");
+           printf("\n %s gets a new card.\n",player_name);
         }
 
         else if(p2->value > p1->value)
@@ -59,7 +60,7 @@ if(p1->card_type==0 && p2->card_type==0) //Both ATTACK
 
            p2=addCard(p2, createCard());
 
-           printf("\nPlayer 2 gets a new card.\n");
+           printf("\ncomputer gets a new card.\n");
 
         }
         else if(p1->value == p2->value)
@@ -108,11 +109,11 @@ else if(p1->card_type==2 && p2->card_type==2) //Both RUN
      /*********************************/
 else if(p1->card_type==0 && p2->card_type==1) //p1 ATTACK, p2 DEFEND
     {
-      printf("\nPlayer 1 ATTACKs player 2 DEFENDs  \n");
+      printf("\n%s ATTACKs player 2 DEFENDs  \n",player_name);
 
         if(p1->value>p2->value)
         {
-            printf("\nPlayer 1 gets a new card. Player 2 loses his next card. \n");
+            printf("\n%s gets a new card. computer loses his next card. \n");
 
             p1_head= removeCard(p1_head,p1);
 
@@ -137,7 +138,7 @@ else if(p1->card_type==0 && p2->card_type==1) //p1 ATTACK, p2 DEFEND
      /*********************************/
 else if(p2->card_type==0 && p1->card_type==1) //p2 ATTACK, p1 DEFEND
 {
-    printf("\nPlayer 2 ATTACKs player 1 DEFENDs  \n");
+    printf("\ncomputer ATTACKs %s DEFENDs  \n",player_name);
 
         if(p2->value > p1->value)
             {
@@ -155,7 +156,7 @@ else if(p2->card_type==0 && p1->card_type==1) //p2 ATTACK, p1 DEFEND
 
             p2=addCard(p2, createCard());
 
-            printf("\nPlayer 2 gets a new card. Player 1 loses his next card.  \n");
+            printf("\ncomputer gets a new card. %s loses his next card.  \n",player_name);
 
             }
 
@@ -178,9 +179,9 @@ else if(p1->card_type==1 && p2->card_type==2 ) //p1 DEFEND, p2 RUN
       if(getLength(p2)!=0)
           p2 = removeCard(p2,p2);
 
-       printf("\nPlayer 1 DEFENDs and Player 2 RUNs.\n");
+       printf("\n%s DEFENDs and Player 2 RUNs.\n",player_name);
 
-       printf("\nPlayer 2 loses his next card.\n");
+       printf("\ncomputer loses his next card.\n");
     }
      /*********************************/
 else if(p2->card_type==1 && p1->card_type==2) //p2 DEFEND, p1 RUN
@@ -197,15 +198,15 @@ else if(p2->card_type==1 && p1->card_type==2) //p2 DEFEND, p1 RUN
 
     p2= removeCard(p2,p2);
 
-    printf("\nPlayer 2 DEFENDSs and Player 1 RUNs.\n");
+    printf("\ncomputer DEFENDSs and %s RUNs.\n",player_name);
 
-    printf("\nPlayer 1 loses his next card .\n");
+    printf("\n%s loses his next card .\n",player_name);
 }
 
     /*********************************/
 else if(p1->card_type==0 && p2->card_type==2 ) //p1 ATTACK, p2 RUN
 {
-    printf("\nPlayer 1 ATTACKs and Player 2 RUNs.\n");
+    printf("\n%s ATTACKs and computer RUNs.\n",player_name);
 
     p1_head = removeCard(p1_head,p1);
 
@@ -216,13 +217,13 @@ else if(p1->card_type==0 && p2->card_type==2 ) //p1 ATTACK, p2 RUN
     if(getLength(p2)!=0)
         p2= removeCard(p2,p2);
 
-    printf("\nPlayer 1 gets a new card. Player 2 loses his next card.\n");
+    printf("\n%s gets a new card. computer loses his next card.\n",player_name);
 
     }
         /*********************************/
 else if(p2->card_type==0 && p1->card_type==2) //p2 ATTACK, p1 RUN
 {
-    printf("\nPlayer 2 ATTACKs and Player 1 RUNs.\n");
+    printf("\ncomputer ATTACKs and %s RUNs.\n",player_name);
 
     if (p1->next==NULL)
         temp=p1_head;
@@ -238,7 +239,7 @@ else if(p2->card_type==0 && p1->card_type==2) //p2 ATTACK, p1 RUN
 
     p2=addCard(p2, createCard());
 
-    printf("\nPlayer 2 gets a new card. Player 1 loses his next card.\n");
+    printf("\ncomputer gets a new card. %s loses his next card.\n",player_name);
 }
     /*********************************/
 
@@ -251,16 +252,18 @@ int main()
 {
     srand(time(NULL));
 
-    printf("============= WELCOME TO BATTLE CARDS GAME ============\n");
+    printf("\n============= WELCOME TO BATTLE CARDS GAME ============\n");
+    printf("\n\nWhat's your name?\n");
+    gets(player_name);
 
-printf("\nINETRUCTIONS OF THE GAME\n");
+printf("\n\nINETRUCTIONS OF THE GAME\n");
 
 printf("\n1) Enter number of cards\n");
 printf("\n2) PLAYER 1 & PLAYER 2 Will have the same number of cards \n");
-printf("\n3) YOU ARE PLAYER 1 & PLAYER 2 IS THE PC \n");
+printf("\n3) %s is PLAYER 1 & PLAYER 2 IS THE PC \n",player_name);
 printf("\n4) YOUR CARDS ARE VISABLE TO YOU, SO YOU CAN CHOOSE ANY ONE OF THEM TO PLAY THE ROUND \n");
 printf("\n5) 'A' means ATTACK, 'D' means DEFFEND , 'R' means RUN \n");
-printf("\n6) When you ATTACK and the value of your card is greater than the value of player 2 card you will have a new card\n");
+printf("\n6) When you ATTACK and the value of your card is greater than the value of computer card you will have a new card\n");
 printf("\n7) in '6':\n    i.if player 2 Attack, player 2 will lose his current card\n    ii.if player 2 DEFFENDs, player 2 will lose his next card\n");
 printf("\n8) if you DEFFEND and the value of your card is greater than the value of player 2 card");
 printf("\n    i.if player 2 Attack,we return to case '6'\n    ii.if player 2 DEFFENDs, nothing happens\n");
@@ -293,17 +296,17 @@ for(;; ){
 
       else if(getLength(p1_head) !=0&&getLength(p2) ==0)
       {
-         printf("\n\n\n============ YOU WIN =============\n\n\n\n");
+         printf("\n\n\n============ %s WIN =============\n\n\n\n",player_name);
       }
 
       else
           printf("\n\n\n============ None of both players win =============\n\n\n\n");
 
-     printf("Player 1 ending cards: ");
+     printf("%s ending cards: ",player_name);
 
       printCards(p1_head);
 
-      printf("Player 2 ending cards: ");
+      printf("computer ending cards: ");
 
       printCards(p2);
 
@@ -319,3 +322,4 @@ printf("The end\n");
 
     return 0;
 }
+
