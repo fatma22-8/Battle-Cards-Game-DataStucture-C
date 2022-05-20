@@ -42,7 +42,7 @@ Card*Search(Card*head,int type,int value);
 
 //function to check if the input is valid or not in linked list.
 
-Card*Pullcard(Card*p1_head,char type,int val);
+Card*getvalue(Card*p1_head,char type,int val);
 
 void play ();
 
@@ -51,4 +51,3 @@ void play ();
 int getNumber( char str[]);
 
 #endif
-
