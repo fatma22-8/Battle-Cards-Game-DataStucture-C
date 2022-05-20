@@ -253,6 +253,7 @@ int main()
     srand(time(NULL));
 
     printf("\n============= WELCOME TO BATTLE CARDS GAME ============\n");
+
     printf("\n\nWhat's your name?\n");
     gets(player_name);
 
@@ -279,7 +280,7 @@ n=getNumber(str);
 
  p2=buildCards(n);
 
-p1_head=createCard() ;
+
 
 p1_head =p1;
 
