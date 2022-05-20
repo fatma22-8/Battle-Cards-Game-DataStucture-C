@@ -45,17 +45,20 @@ clock_t start = clock();
 
 for(;; ){
 
-        if(getLength(p1) ==0 || getLength(p2) ==0){
- if(getLength(p1) ==0){
+        if(getLength(p1) ==0 || getLength(p2) ==0)
+    {
+    if(getLength(p1) ==0&&getLength(p2) !=0)
+    {
+        printf("\n\n\n============ GAME OVER =============\n\n\n\n");
+    }
 
-         printf("\n\n\n============ GAME OVER =============\n\n\n\n");
-
-
+      else if(getLength(p1) !=0&&getLength(p2) ==0)
+      {
+         printf("\n\n\n============ YOU WIN =============\n\n\n\n");
       }
-       else{
 
-      printf("\n\n\n============ YOU WIN =============\n\n\n\n");
-      }
+      else
+          printf("\n\n\n============ None of both players win =============\n\n\n\n");
 
       printf("\nPlayer 1 ending cards: ");
 
