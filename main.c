@@ -280,8 +280,6 @@ n=getNumber(str);
 
  p2=buildCards(n);
 
-
-
 p1_head =p1;
 
  printf("============= PLAYER 1 VS PLAYER 2 SHOWDOWN ============\n");
