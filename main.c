@@ -16,7 +16,7 @@
 int main()
 {
 
-	printf("Enter number of cards:    ");
+	printf("\n \nEnter number of cards:    ");
 
        scanf("%s",str);
 
@@ -31,7 +31,7 @@ clock_t start = clock();
  p1=buildCards(n);
  p2=buildCards(n);
 
- printf("============= PLAYER 1 V PLAYER 2 SHOWDOWN ============\n");
+ printf("\n============= PLAYER 1 V PLAYER 2 SHOWDOWN ============\n");
 
  printf("Start size: %d cards\n", n);
 
@@ -57,19 +57,19 @@ for(;; ){
       printf("\n\n\n============ YOU WIN =============\n\n\n\n");
       }
 
-      printf("Player 1 ending cards: ");
+      printf("\nPlayer 1 ending cards: ");
 
       printCards(p1);
 
-      printf("Player 2 ending cards: ");
+      printf("\nPlayer 2 ending cards: ");
 
       printCards(p2);
 
-      printf("The end\n");
+printf("\n\n\n============ THE END =============\n\n\n\n");
 
         clock_t stop = clock();
     double elapsed = (double)(stop - start) * 1000.0 / CLOCKS_PER_SEC;
-    printf("Time elapsed in ms: %f", elapsed);
+    printf("Time elapsed in ms: %f \n" , elapsed);
 
  return 0;
     }
