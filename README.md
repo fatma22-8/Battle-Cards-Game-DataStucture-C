@@ -20,13 +20,13 @@ Well, linked lists have many features, so it was easy to add, remove, and search
 ## How to play?
 In the following photo you can see the steps of playing the game 
 
-1) ![image](https://user-images.githubusercontent.com/68230239/166160435-3e4e5b22-a8fd-4ebe-a942-57a6e7071e29.png)
+1) ![image](https://user-images.githubusercontent.com/68230239/169597433-123c8ec1-6b4e-40cc-8dad-17d04db2bfc6.png)
 
-2) ![image](https://user-images.githubusercontent.com/68230239/166160336-99054e8b-c412-4931-921c-8951c50bad9b.png)
+2) ![image](https://user-images.githubusercontent.com/68230239/169597527-0548d37e-2225-436e-b4c2-b82b55515435.png)
 
-3) ![image](https://user-images.githubusercontent.com/68230239/166160362-b8550f81-bde1-4631-84ca-a3c4077612d9.png)
+3) ![image](https://user-images.githubusercontent.com/68230239/169597618-f325e1f1-6b73-43e7-8a8d-c9d97e831ae5.png)
 
-4) ![image](https://user-images.githubusercontent.com/68230239/166160382-89a633c5-88d1-4264-9a8f-431b03186872.png)
+4) ![image](https://user-images.githubusercontent.com/68230239/169597705-a97d52fb-fceb-40c4-8d6d-cf6b71e47fd6.png)
 
 
 ## For more details check our drive
