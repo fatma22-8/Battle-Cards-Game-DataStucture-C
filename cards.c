@@ -156,7 +156,7 @@ Card*Search(Card*head,int type,int value)
  return NULL;
 }
 
-Card*Pullcard(Card*p1_head,char type,int val)
+Card*getvalue(Card*p1_head,char type,int val)
 {
     int cardt;
     if(type=='A' || type=='a' )
@@ -185,5 +185,3 @@ int getNumber( char str[]){
 long int   n = atoi(str);
 return n;
 }
-
-
